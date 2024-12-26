@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/auth/login", formData);
+      const response = await axios.post("https://recipeappmernbackend.onrender.com/auth/login", formData);
       alert("Login Successful!");
 
       // Store token in localStorage
