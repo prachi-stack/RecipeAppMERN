@@ -10,7 +10,7 @@ const SavedRecipes = () => {
     const fetchSavedRecipes = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/recipes/savedRecipes/${userID}`
+          `https://recipeappmernbackend.onrender.com/recipes/savedRecipes/${userID}`
         );
         setSavedRecipes(response.data.savedRecipes);
       } catch (err) {
