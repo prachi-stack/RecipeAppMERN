@@ -33,7 +33,7 @@ const CreateRecipe = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/recipes", recipe);
+            const response = await axios.post("https://recipeappmernbackend.onrender.com/recipe", recipe);
             console.log("Recipe created:", response.data);
             alert("Recipe created successfully!");
             navigate("/"); 
@@ -51,7 +51,7 @@ const CreateRecipe = () => {
 
         try {
             // Send ingredients as a comma-separated string
-            const response = await axios.post("http://localhost:5000/recipes/variations", {
+            const response = await axios.post("https://recipeappmernbackend.onrender.com/recipes/variations", {
                 recipeData: {
                     ingredients: recipe.ingredients.split(',').map(ingredient => ingredient.trim())  // Split and trim ingredients
                 }
