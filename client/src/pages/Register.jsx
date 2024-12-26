@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://recipeappmernbackend.onrender.com/auth/register",
         formData
       );
       alert(response.data.message);
