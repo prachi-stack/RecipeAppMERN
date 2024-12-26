@@ -12,8 +12,10 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(cors());
-
+ app.use(cors({
+  origin: 'https://recipeappmernfrontend.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 // Routes
 app.use("/auth", userRouter);
 app.use('/recipes', recipesRouter);
