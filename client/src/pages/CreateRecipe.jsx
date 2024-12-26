@@ -33,7 +33,7 @@ const CreateRecipe = () => {
         }
 
         try {
-            const response = await axios.post("https://recipeappmernbackend.onrender.com/recipe", recipe);
+            const response = await axios.post("https://recipeappmernbackend.onrender.com/recipes", recipe);
             console.log("Recipe created:", response.data);
             alert("Recipe created successfully!");
             navigate("/"); 
