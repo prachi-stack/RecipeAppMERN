@@ -65,7 +65,7 @@ const CreateRecipe = () => {
 
     return (
         <div className="min-h-screen py-[8rem] flex items-center justify-center bg-gradient-to-r from-green-200 to-green-900 px-[2rem] sm:px- ">
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg w-full max-w-md md:max-w-[50%]">
+            <div className="bg-gray-100 p-8 rounded-lg shadow-lg w-full max-w-md max-w-[30%] md:max-w-[50%]">
                 <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8 font-poppins">Create a New Recipe</h2>
                 <form className="space-y-6" onSubmit={onSubmit}>
                     {/* Recipe Name */}
